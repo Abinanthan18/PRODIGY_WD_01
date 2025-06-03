@@ -1,0 +1,62 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fixed Navbar */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  nav.scrolled {
+    background-color: #ababab;
+  }
+  
+  /* Menu Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: rgb(11, 10, 10);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  /* Hover Effect */
+  .nav-links li a:hover {
+    background-color: rgb(242, 8, 8);
+    color: #ebebeb;
+    border-radius: 5px;
+  }
+  
+  /* Section Styles */
+  section {
+    height: 100vh;
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Optional smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
